@@ -118,7 +118,7 @@ libp2p-swarm = { workspace = true }
 libp2p-wasm-ext = { workspace = true, optional = true }
 libp2p-yamux = { workspace = true, optional = true }
 
-multiaddr = { version = "0.17.0" }
+multiaddr = { git = "https://github.com/multiformats/rust-multiaddr", rev = "13a1e9e7da1e26a3aecdec695dc8e5cb0994d4b9" }
 pin-project = "1.0.0"
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]

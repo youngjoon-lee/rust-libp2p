@@ -10,4 +10,4 @@ async-std = { version = "1.12", features = ["attributes"] }
 async-trait = "0.1"
 futures = "0.3.28"
 libp2p = { path = "../../libp2p", features = ["async-std", "dns", "macros", "noise", "ping", "tcp", "websocket", "yamux"] }
-multiaddr = { version = "0.17.1" }
+multiaddr = { git = "https://github.com/multiformats/rust-multiaddr", rev = "13a1e9e7da1e26a3aecdec695dc8e5cb0994d4b9" }

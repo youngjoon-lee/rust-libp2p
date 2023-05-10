@@ -21,6 +21,7 @@ dcutr = ["libp2p-dcutr"]
 [dependencies]
 libp2p-core = { workspace = true }
 libp2p-dcutr =  { workspace = true, optional = true }
+libp2p-gossipsub =  { workspace = true, optional = true }
 libp2p-identify = { workspace = true, optional = true }
 libp2p-kad = { workspace = true, optional = true }
 libp2p-ping = { workspace = true, optional = true }
@@ -28,9 +29,6 @@ libp2p-relay =  { workspace = true, optional = true }
 libp2p-swarm = { workspace = true }
 libp2p-identity = { workspace = true }
 prometheus-client = "0.20.0"
-
-[target.'cfg(not(target_os = "unknown"))'.dependencies]
-libp2p-gossipsub =  { workspace = true, optional = true }
 
 # Passing arguments to the docsrs builder in order to properly document cfg's.
 # More information: https://docs.rs/about/builds#cross-compiling

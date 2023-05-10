@@ -102,6 +102,7 @@ libp2p-connection-limits = { workspace = true }
 libp2p-core = { workspace = true }
 libp2p-dcutr = { workspace = true, optional = true }
 libp2p-floodsub = { workspace = true, optional = true }
+libp2p-gossipsub = { workspace = true, optional = true }
 libp2p-identify = { workspace = true, optional = true }
 libp2p-identity = { workspace = true }
 libp2p-kad = { workspace = true, optional = true }
@@ -132,9 +133,6 @@ libp2p-tls = { workspace = true, optional = true }
 libp2p-uds = { workspace = true, optional = true }
 libp2p-webrtc = { workspace = true, optional = true }
 libp2p-websocket = { workspace = true, optional = true }
-
-[target.'cfg(not(target_os = "unknown"))'.dependencies]
-libp2p-gossipsub = { workspace = true, optional = true }
 
 [dev-dependencies]
 async-std = { version = "1.6.2", features = ["attributes"] }

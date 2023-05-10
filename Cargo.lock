@@ -5468,10 +5468,10 @@ checksum = "0046fef7e28c3804e5e38bfa31ea2a0f73905319b677e57ebe37e49358989b5d"
 [[package]]
 name = "wasm-timer"
 version = "0.2.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "be0ecb0db480561e9a7642b5d3e4187c128914e58aa84330b9493e3eb68c5e7f"
+source = "git+https://github.com/youngjoon-lee/wasm-timer.git?branch=instant#de67d106e7d0a554f0de2d9f03d1cffe5ea07f66"
 dependencies = [
  "futures",
+ "instant",
  "js-sys",
  "parking_lot 0.11.2",
  "pin-utils",
